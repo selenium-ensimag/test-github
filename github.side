@@ -1,7 +1,7 @@
 {
   "id": "0979753b-10a8-4bab-93c7-0a04652b58a6",
   "version": "1.1",
-  "name": "GitHub status",
+  "name": "github",
   "url": "https://github.com",
   "tests": [{
     "id": "3ab9348d-c46f-4b14-966d-dc7b6e7f27ae",
@@ -419,7 +419,172 @@
   }, {
     "id": "7d0f521d-5cb7-4f2a-849f-21e97371da9f",
     "name": "readme-homepage",
-    "commands": []
+    "commands": [{
+      "id": "4f140014-600b-4159-a78b-0173e319361a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1732x1033",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "30f27ef2-2b7b-4046-82a8-fe151dc6f87b",
+      "comment": "",
+      "command": "open",
+      "target": "/logout",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "45509ff1-e3b7-47a1-a914-588907c9db3c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@value='Sign out']", "xpath:attributes"],
+        ["xpath=//div[@id='js-pjax-container']/div/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "345564cc-bd17-4d35-9bef-a028ca67e868",
+      "comment": "",
+      "command": "open",
+      "target": "/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7b581049-d4f9-47e2-b0c1-5981db7cff21",
+      "comment": "",
+      "command": "type",
+      "target": "id=login_field",
+      "targets": [
+        ["id=login_field", "id"],
+        ["name=login", "name"],
+        ["css=#login_field", "css"],
+        ["css=#login_field", "css:finder"],
+        ["xpath=//input[@id='login_field']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/form/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "TestSelenium4218"
+    }, {
+      "id": "ccc66e0d-56bf-4717-b0cc-60702c65b519",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/form/div[3]/input[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/input[2]", "xpath:position"]
+      ],
+      "value": "Fourchette4218"
+    }, {
+      "id": "6a81b678-1615-445e-ba97-ced5f9952050",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/form/div[3]/input[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/input[2]", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "76275372-8a02-44b7-b3e7-76510ee7b1b6",
+      "comment": "",
+      "command": "open",
+      "target": "torvalds/linux",
+      "targets": [
+        ["linkText=Explore", "linkText"],
+        ["css=li:nth-child(4) > .js-selected-navigation-item", "css:finder"],
+        ["xpath=//a[contains(text(),'Explore')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/explore')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bce69256-06cb-4932-bc8c-64541924dd85",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3.Box-title.pr-3",
+      "targets": [
+        ["css=h3.Box-title.pr-3", "css"],
+        ["css=.Box-title", "css:finder"],
+        ["xpath=//div[@id='readme']/div/h3", "xpath:idRelative"],
+        ["xpath=//div[7]/div/h3", "xpath:position"]
+      ],
+      "value": "README"
+    }, {
+      "id": "3f3e57b6-e758-4766-9208-45b20025d254",
+      "comment": "",
+      "command": "open",
+      "target": "git/git",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "48b47051-3f91-4585-9f0a-994e24fae3b4",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3.Box-title.pr-3",
+      "targets": [
+        ["css=h3.Box-title.pr-3", "css"],
+        ["css=.pr-3", "css:finder"],
+        ["xpath=//div[@id='readme']/div/h3", "xpath:idRelative"],
+        ["xpath=//div[8]/div/h3", "xpath:position"]
+      ],
+      "value": " README.md "
+    }, {
+      "id": "6a202dba-a0fe-403d-bd3e-afc0216ddd3f",
+      "comment": "",
+      "command": "open",
+      "target": "Microsoft/vscode",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "27c09bf4-6248-480e-bd10-1d15dde5a387",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3.Box-title.pr-3",
+      "targets": [
+        ["css=h3.Box-title.pr-3", "css"],
+        ["css=.pr-3", "css:finder"],
+        ["xpath=//div[@id='readme']/div/h3", "xpath:idRelative"],
+        ["xpath=//div[8]/div/h3", "xpath:position"]
+      ],
+      "value": " README.md "
+    }, {
+      "id": "520019be-97bd-41c3-9ca8-29178ae6a7f8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.name",
+      "targets": [
+        ["css=.name", "css:finder"],
+        ["xpath=//ul[@id='user-links']/li[3]/details/summary", "xpath:idRelative"],
+        ["xpath=//li[3]/details/summary", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dfb18dc3-d94a-4a4d-8b2a-954da28a7101",
+      "comment": "Logout",
+      "command": "click",
+      "target": "css=button.dropdown-item.dropdown-signout",
+      "targets": [
+        ["css=button.dropdown-item.dropdown-signout", "css"],
+        ["css=.logout-form > .dropdown-item", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//ul[@id='user-links']/li[3]/details/details-menu/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
   }],
   "suites": [{
     "id": "ada47953-ec6a-4296-89e0-44be8977abdc",
