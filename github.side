@@ -412,6 +412,14 @@
       ],
       "value": ""
     }]
+  }, {
+    "id": "d0baad00-a9fd-4a6d-bc34-a80e64868d4d",
+    "name": "similar-pr-issue",
+    "commands": []
+  }, {
+    "id": "7d0f521d-5cb7-4f2a-849f-21e97371da9f",
+    "name": "readme-homepage",
+    "commands": []
   }],
   "suites": [{
     "id": "ada47953-ec6a-4296-89e0-44be8977abdc",
@@ -420,6 +428,20 @@
     "parallel": false,
     "timeout": 300,
     "tests": ["3ab9348d-c46f-4b14-966d-dc7b6e7f27ae", "9872f08a-1dc2-44cb-b8df-de16da73f5e5"]
+  }, {
+    "id": "22f02aa3-63d8-4a60-b904-e097a9dc7163",
+    "name": "Homogénéité",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }, {
+    "id": "5cf33ca5-afc9-472f-a79e-cab80a5d5e87",
+    "name": "Protection contre les erreurs",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
   }],
   "urls": ["https://github.com/"],
   "plugins": []
