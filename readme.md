@@ -13,8 +13,8 @@ Homogénéité /cohérence:
 - [ ] test 1 (ouverture d'issue/ouverture de PR)
 - [ ] test 2 (readme.md ouvert sur tout les projets)
 - [ ] test impossible (
-- tester la cohérence sur un navigateur pour une personne aveugle
-- tester qu'il valide bien l'email mais on peut pas à cause du capcha
+  - tester la cohérence sur un navigateur pour une personne aveugle
+  - tester qu'il valide bien l'email mais on peut pas à cause du capcha
 )
 
 Protection contre les erreurs:
