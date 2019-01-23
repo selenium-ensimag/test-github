@@ -19,5 +19,5 @@ Homogénéité /cohérence:
 
 Protection contre les erreurs:
 - [ ] test 1 (le fait de devoir taper le nom d'un projet pour le supprimer)
-- [ ] test 2 (Bouton preview et commit avant de valider une modification)
+- [ ] test 2 (le stay on page lors qu'on quitte un document sans avoir sauvegarder)
 - [ ] test impossible (l'authentification à 2 facteur, qui s'assure que la personne qui à rentrer le login et le password n'a pas réussi par erreur !)
