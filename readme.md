@@ -2,7 +2,7 @@ TODO:
 =====
 
 Atteignabilité (adaptivité ? http://iihm.imag.fr/nigay/VERBATIM/L3.1.pdf):
-- [ ] test 1 (changer le status, ou aller dans profile)
+- [ ] test 1 (changer le status, et vérifier qu'il est bien mis)
 - [ ] test 2 (créer un repo, à gauche avec new, et le plus en haut à droite creer repo)
 - [ ] test impossible (évaluer une atmosphère génrale, par example si on choisit un thème sombre, sélénium n'est pas capable de nous dire que oui l'ambinace du site est sombre)
 
