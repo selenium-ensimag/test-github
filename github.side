@@ -1,6 +1,6 @@
 {
   "id": "0979753b-10a8-4bab-93c7-0a04652b58a6",
-  "version": "1.1",
+  "version": "2.0",
   "name": "github",
   "url": "https://github.com",
   "tests": [{
@@ -677,6 +677,250 @@
       ],
       "value": ""
     }]
+  }, {
+    "id": "149984f3-3130-44c1-96b8-fc3deb126bf8",
+    "name": "delete-repo",
+    "commands": [{
+      "id": "380e3600-531b-47f6-9f1d-48c8f6998765",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1732x1033",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ac03f3c5-0694-4a3f-9671-b8d88a06b3cf",
+      "comment": "",
+      "command": "open",
+      "target": "/logout",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e6526266-65fb-4b5c-90f5-a2035683b637",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@value='Sign out']", "xpath:attributes"],
+        ["xpath=//div[@id='js-pjax-container']/div/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "766bda6b-da9c-4963-a93d-66f5d64e674a",
+      "comment": "",
+      "command": "open",
+      "target": "/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3ccf5ac5-a92e-4e84-a43f-770daa9fb773",
+      "comment": "",
+      "command": "type",
+      "target": "id=login_field",
+      "targets": [
+        ["id=login_field", "id"],
+        ["name=login", "name"],
+        ["css=#login_field", "css"],
+        ["css=#login_field", "css:finder"],
+        ["xpath=//input[@id='login_field']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/form/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "TestSelenium4218"
+    }, {
+      "id": "cde0c17f-b403-4193-8ccd-a1ba2e615011",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/form/div[3]/input[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/input[2]", "xpath:position"]
+      ],
+      "value": "Fourchette4218"
+    }, {
+      "id": "5ba4dc64-489a-49c5-ae73-cce85e0a2745",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/form/div[3]/input[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/input[2]", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "a61e8ae4-1b66-4543-9559-30ef629f1391",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=New",
+      "targets": [
+        ["linkText=New", "linkText"],
+        ["css=.mt-5 .btn", "css:finder"],
+        ["xpath=(//a[contains(@href, '/new')])[4]", "xpath:href"],
+        ["xpath=//h4/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "06d7736e-fa7f-428e-bb57-96cf501963e3",
+      "comment": "",
+      "command": "type",
+      "target": "id=repository_name",
+      "targets": [
+        ["id=repository_name", "id"],
+        ["name=repository[name]", "name"],
+        ["css=#repository_name", "css:finder"],
+        ["css=#repository_name", "css"],
+        ["xpath=//input[@id='repository_name']", "xpath:attributes"],
+        ["xpath=//form[@id='new_repository']/div[2]/auto-check/dl/dd/input", "xpath:idRelative"],
+        ["xpath=//dd/input", "xpath:position"]
+      ],
+      "value": "todelete"
+    }, {
+      "id": "6b740370-4819-47e4-9622-919dc8570c66",
+      "comment": "",
+      "command": "click",
+      "target": "id=repository_auto_init",
+      "targets": [
+        ["id=repository_auto_init", "id"],
+        ["css=#repository_auto_init", "css:finder"],
+        ["css=#repository_auto_init", "css"],
+        ["xpath=//input[@id='repository_auto_init']", "xpath:attributes"],
+        ["xpath=//form[@id='new_repository']/div[3]/div[4]/label/input[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/label/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b3db664-8fd9-4a8f-9038-3bf92d9605aa",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=repository_name",
+      "targets": [
+        ["id=repository_name", "id"],
+        ["name=repository[name]", "name"],
+        ["css=#repository_name", "css:finder"],
+        ["css=#repository_name", "css"],
+        ["xpath=//input[@id='repository_name']", "xpath:attributes"],
+        ["xpath=//form[@id='new_repository']/div[2]/auto-check/dl/dd/input", "xpath:idRelative"],
+        ["xpath=//dd/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "110426a4-1d9b-488a-8c63-3b6681718dd7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Settings",
+      "targets": [
+        ["linkText=Settings", "linkText"],
+        ["css=.js-selected-navigation-item:nth-child(7)", "css:finder"],
+        ["xpath=//div[@id='js-repo-pjax-container']/div/nav/a[4]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/TestSelenium4218/todelete/settings')]", "xpath:href"],
+        ["xpath=//nav/a[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8943076e-4917-46af-ac1e-43d966d052b2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Box-row:nth-child(4) > .details-reset > .btn",
+      "targets": [
+        ["css=.Box-row:nth-child(4) > .details-reset > .btn", "css:finder"],
+        ["xpath=//div[@id='options_bucket']/div[8]/ul/li[4]/details/summary", "xpath:idRelative"],
+        ["xpath=//li[4]/details/summary", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b59fba3b-5997-417f-9049-d617d49547fd",
+      "comment": "",
+      "command": "type",
+      "target": "css=p:nth-child(4) > .form-control",
+      "targets": [
+        ["css=p:nth-child(4) > .form-control", "css:finder"],
+        ["xpath=(//input[@name='verify'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='options_bucket']/div[8]/ul/li[4]/details/details-dialog/div[3]/form/p/input", "xpath:idRelative"],
+        ["xpath=//li[4]/details/details-dialog/div[3]/form/p/input", "xpath:position"]
+      ],
+      "value": "cannotdelete"
+    }, {
+      "id": "897628db-8857-4989-8a15-d54ed11de4e9",
+      "comment": "",
+      "command": "assertNotEditable",
+      "target": "css=.js-normalize-submit:nth-child(3) > .btn",
+      "targets": [
+        ["css=.Box-row:nth-child(4) > .details-reset > .btn", "css:finder"],
+        ["xpath=//div[@id='options_bucket']/div[8]/ul/li[4]/details/summary", "xpath:idRelative"],
+        ["xpath=//li[4]/details/summary", "xpath:position"]
+      ],
+      "value": "I understand the consequences, delete this repository"
+    }, {
+      "id": "c0be91d9-872e-4815-b14a-712ba7398258",
+      "comment": "",
+      "command": "type",
+      "target": "css=p:nth-child(4) > .form-control",
+      "targets": [
+        ["css=p:nth-child(4) > .form-control", "css:finder"],
+        ["xpath=(//input[@name='verify'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='options_bucket']/div[8]/ul/li[4]/details/details-dialog/div[3]/form/p/input", "xpath:idRelative"],
+        ["xpath=//li[4]/details/details-dialog/div[3]/form/p/input", "xpath:position"]
+      ],
+      "value": "TestSelenium4218/todelete"
+    }, {
+      "id": "7802a3a4-9797-48e2-b32a-0e5973c6cbb7",
+      "comment": "",
+      "command": "assertEditable",
+      "target": "css=.js-normalize-submit:nth-child(3) > .btn",
+      "targets": [
+        ["css=.Box-row:nth-child(4) > .details-reset > .btn", "css:finder"],
+        ["xpath=//div[@id='options_bucket']/div[8]/ul/li[4]/details/summary", "xpath:idRelative"],
+        ["xpath=//li[4]/details/summary", "xpath:position"]
+      ],
+      "value": "I understand the consequences, delete this repository"
+    }, {
+      "id": "911db55b-8de6-4200-97b7-082c2303358e",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=p:nth-child(4) > .form-control",
+      "targets": [
+        ["css=p:nth-child(4) > .form-control", "css:finder"],
+        ["xpath=(//input[@name='verify'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='options_bucket']/div[8]/ul/li[4]/details/details-dialog/div[3]/form/p/input", "xpath:idRelative"],
+        ["xpath=//li[4]/details/details-dialog/div[3]/form/p/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "d974dbe6-ab64-4320-9dd0-9e2cbac3eb36",
+      "comment": "",
+      "command": "click",
+      "target": "css=.name",
+      "targets": [
+        ["css=.name", "css:finder"],
+        ["xpath=//ul[@id='user-links']/li[3]/details/summary", "xpath:idRelative"],
+        ["xpath=//li[3]/details/summary", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b6fe1ae6-2e88-4372-bee2-db2d7dfd613a",
+      "comment": "Logout",
+      "command": "click",
+      "target": "css=button.dropdown-item.dropdown-signout",
+      "targets": [
+        ["css=button.dropdown-item.dropdown-signout", "css"],
+        ["css=.logout-form > .dropdown-item", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//ul[@id='user-links']/li[3]/details/details-menu/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
   }],
   "suites": [{
     "id": "ada47953-ec6a-4296-89e0-44be8977abdc",
@@ -691,14 +935,14 @@
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": []
+    "tests": ["7d0f521d-5cb7-4f2a-849f-21e97371da9f", "d0baad00-a9fd-4a6d-bc34-a80e64868d4d"]
   }, {
     "id": "5cf33ca5-afc9-472f-a79e-cab80a5d5e87",
     "name": "Protection contre les erreurs",
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": []
+    "tests": ["149984f3-3130-44c1-96b8-fc3deb126bf8"]
   }],
   "urls": ["https://github.com/"],
   "plugins": []
