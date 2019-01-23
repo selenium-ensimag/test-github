@@ -860,7 +860,7 @@
         ["xpath=//div[@id='options_bucket']/div[8]/ul/li[4]/details/summary", "xpath:idRelative"],
         ["xpath=//li[4]/details/summary", "xpath:position"]
       ],
-      "value": "I understand the consequences, delete this repository"
+      "value": ""
     }, {
       "id": "c0be91d9-872e-4815-b14a-712ba7398258",
       "comment": "",
@@ -883,7 +883,7 @@
         ["xpath=//div[@id='options_bucket']/div[8]/ul/li[4]/details/summary", "xpath:idRelative"],
         ["xpath=//li[4]/details/summary", "xpath:position"]
       ],
-      "value": "I understand the consequences, delete this repository"
+      "value": ""
     }, {
       "id": "911db55b-8de6-4200-97b7-082c2303358e",
       "comment": "",
@@ -921,6 +921,151 @@
       ],
       "value": ""
     }]
+  }, {
+    "id": "3fac9150-916b-4ee4-b6d9-ec09dc0147cc",
+    "name": "empty-project",
+    "commands": [{
+      "id": "3314d025-fc2d-41e7-a4c0-786d2a622907",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1732x1033",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4707bcac-c501-456f-a0ff-6963ab0516c1",
+      "comment": "",
+      "command": "open",
+      "target": "/logout",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a10d4c03-43eb-46a0-958a-5a6689f2f1b5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@value='Sign out']", "xpath:attributes"],
+        ["xpath=//div[@id='js-pjax-container']/div/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a043bd51-bc4d-462a-9a74-028d7508e8f6",
+      "comment": "",
+      "command": "open",
+      "target": "/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6107b21a-2640-4ab4-b8b1-8ff4a40b48c4",
+      "comment": "",
+      "command": "type",
+      "target": "id=login_field",
+      "targets": [
+        ["id=login_field", "id"],
+        ["name=login", "name"],
+        ["css=#login_field", "css"],
+        ["css=#login_field", "css:finder"],
+        ["xpath=//input[@id='login_field']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/form/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "TestSelenium4218"
+    }, {
+      "id": "ff2727aa-357c-4303-a063-962f88b010a1",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/form/div[3]/input[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/input[2]", "xpath:position"]
+      ],
+      "value": "Fourchette4218"
+    }, {
+      "id": "d3c00f9c-0864-4355-9f10-38cef16aaee2",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/form/div[3]/input[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/input[2]", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "db4033de-a000-4d23-9691-a86b3858f1d9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=New",
+      "targets": [
+        ["linkText=New", "linkText"],
+        ["css=.mt-5 .btn", "css:finder"],
+        ["xpath=(//a[contains(@href, '/new')])[4]", "xpath:href"],
+        ["xpath=//h4/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a4fa024-efef-49c6-bbdf-41774391b1a9",
+      "comment": "plein d'espace",
+      "command": "type",
+      "target": "id=repository_name",
+      "targets": [
+        ["id=repository_name", "id"],
+        ["name=repository[name]", "name"],
+        ["css=#repository_name", "css:finder"],
+        ["css=#repository_name", "css"],
+        ["xpath=//input[@id='repository_name']", "xpath:attributes"],
+        ["xpath=//form[@id='new_repository']/div[2]/auto-check/dl/dd/input", "xpath:idRelative"],
+        ["xpath=//dd/input", "xpath:position"]
+      ],
+      "value": "                                    "
+    }, {
+      "id": "75971638-983d-472b-9922-9dcfd0ec0a61",
+      "comment": "",
+      "command": "assertNotEditable",
+      "target": "css=.first-in-line",
+      "targets": [
+        ["css=.first-in-line", "css:finder"],
+        ["xpath=(//button[@type='submit'])[4]", "xpath:attributes"],
+        ["xpath=//form[@id='new_repository']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div/form/div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c094ac5b-9411-4a37-9ce7-9dcdc085a5b6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.name",
+      "targets": [
+        ["css=.name", "css:finder"],
+        ["xpath=//ul[@id='user-links']/li[3]/details/summary", "xpath:idRelative"],
+        ["xpath=//li[3]/details/summary", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4329faa3-d605-4ab4-8864-edd83dd233d7",
+      "comment": "Logout",
+      "command": "click",
+      "target": "css=button.dropdown-item.dropdown-signout",
+      "targets": [
+        ["css=button.dropdown-item.dropdown-signout", "css"],
+        ["css=.logout-form > .dropdown-item", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//ul[@id='user-links']/li[3]/details/details-menu/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
   }],
   "suites": [{
     "id": "ada47953-ec6a-4296-89e0-44be8977abdc",
@@ -942,7 +1087,7 @@
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": ["149984f3-3130-44c1-96b8-fc3deb126bf8"]
+    "tests": ["149984f3-3130-44c1-96b8-fc3deb126bf8", "3fac9150-916b-4ee4-b6d9-ec09dc0147cc"]
   }],
   "urls": ["https://github.com/"],
   "plugins": []
