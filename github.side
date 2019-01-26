@@ -414,121 +414,6 @@
       "value": ""
     }]
   }, {
-    "id": "d0baad00-a9fd-4a6d-bc34-a80e64868d4d",
-    "name": "similar-pr-issue",
-    "commands": [{
-      "id": "a271fd43-8764-449d-9e2a-fac258301294",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1732x1033",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "354923e9-a47f-40a5-b0c9-ab6a8fa99991",
-      "comment": "",
-      "command": "open",
-      "target": "/logout",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "b70e0a6e-1cfe-41cd-82b3-5c225346348b",
-      "comment": "",
-      "command": "click",
-      "target": "css=.btn",
-      "targets": [
-        ["css=.btn", "css:finder"],
-        ["xpath=//input[@value='Sign out']", "xpath:attributes"],
-        ["xpath=//div[@id='js-pjax-container']/div/form/input[3]", "xpath:idRelative"],
-        ["xpath=//input[3]", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "d20aa036-4345-4d1d-9846-b9400fbe0499",
-      "comment": "",
-      "command": "open",
-      "target": "/login",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "c54417fb-baf0-4df7-a288-a2dd775907d4",
-      "comment": "",
-      "command": "type",
-      "target": "id=login_field",
-      "targets": [
-        ["id=login_field", "id"],
-        ["name=login", "name"],
-        ["css=#login_field", "css"],
-        ["css=#login_field", "css:finder"],
-        ["xpath=//input[@id='login_field']", "xpath:attributes"],
-        ["xpath=//div[@id='login']/form/div[3]/input", "xpath:idRelative"],
-        ["xpath=//div[3]/input", "xpath:position"]
-      ],
-      "value": "TestSelenium4218"
-    }, {
-      "id": "b3ae50ab-f1a7-4f80-8882-70b5c39c616a",
-      "comment": "",
-      "command": "type",
-      "target": "id=password",
-      "targets": [
-        ["id=password", "id"],
-        ["name=password", "name"],
-        ["css=#password", "css"],
-        ["css=#password", "css:finder"],
-        ["xpath=//input[@id='password']", "xpath:attributes"],
-        ["xpath=//div[@id='login']/form/div[3]/input[2]", "xpath:idRelative"],
-        ["xpath=//div[3]/input[2]", "xpath:position"]
-      ],
-      "value": "Fourchette4218"
-    }, {
-      "id": "ff99955d-08d9-442c-b123-86f94d05723e",
-      "comment": "",
-      "command": "sendKeys",
-      "target": "id=password",
-      "targets": [
-        ["id=password", "id"],
-        ["name=password", "name"],
-        ["css=#password", "css"],
-        ["css=#password", "css:finder"],
-        ["xpath=//input[@id='password']", "xpath:attributes"],
-        ["xpath=//div[@id='login']/form/div[3]/input[2]", "xpath:idRelative"],
-        ["xpath=//div[3]/input[2]", "xpath:position"]
-      ],
-      "value": "${KEY_ENTER}"
-    }, {
-      "id": "252dfbd8-f19d-4fdc-9297-20bb8684c379",
-      "comment": "",
-      "command": "open",
-      "target": "twbs/bootstrap/issues",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "0658782e-c5e2-432b-b48b-21b74c7c50c1",
-      "comment": "",
-      "command": "open",
-      "target": "twbs/bootstrap/pulls",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "e69f7ccc-f540-4b39-a614-7ddd5ccd717a",
-      "comment": "",
-      "command": "open",
-      "target": "/logout",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "799ab7eb-8cc4-43c4-ab0e-1bf743d80aad",
-      "comment": "",
-      "command": "click",
-      "target": "css=.btn",
-      "targets": [
-        ["css=.btn", "css:finder"],
-        ["xpath=//input[@value='Sign out']", "xpath:attributes"],
-        ["xpath=//div[@id='js-pjax-container']/div/form/input[3]", "xpath:idRelative"],
-        ["xpath=//input[3]", "xpath:position"]
-      ],
-      "value": ""
-    }]
-  }, {
     "id": "7d0f521d-5cb7-4f2a-849f-21e97371da9f",
     "name": "readme-homepage",
     "commands": [{
@@ -1812,7 +1697,7 @@
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": ["149984f3-3130-44c1-96b8-fc3deb126bf8", "3fac9150-916b-4ee4-b6d9-ec09dc0147cc"]
+    "tests": ["149984f3-3130-44c1-96b8-fc3deb126bf8", "3fac9150-916b-4ee4-b6d9-ec09dc0147cc", "030b5562-37b5-4706-b459-672cdad03c58"]
   }, {
     "id": "3c872633-1151-488d-b72a-b7e0cf26d7ee",
     "name": "Atteignabilité",
@@ -1826,7 +1711,7 @@
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": ["3ab9348d-c46f-4b14-966d-dc7b6e7f27ae", "9872f08a-1dc2-44cb-b8df-de16da73f5e5", "149984f3-3130-44c1-96b8-fc3deb126bf8", "3fac9150-916b-4ee4-b6d9-ec09dc0147cc", "2d2f5869-e894-41a2-b3a9-74f3f69fb5de", "1fe130ba-fca8-4f11-9678-ea47d51c17b3", "02278918-e902-4b35-8b03-f4a5980c407b", "7d0f521d-5cb7-4f2a-849f-21e97371da9f"]
+    "tests": ["3ab9348d-c46f-4b14-966d-dc7b6e7f27ae", "9872f08a-1dc2-44cb-b8df-de16da73f5e5", "149984f3-3130-44c1-96b8-fc3deb126bf8", "3fac9150-916b-4ee4-b6d9-ec09dc0147cc", "2d2f5869-e894-41a2-b3a9-74f3f69fb5de", "1fe130ba-fca8-4f11-9678-ea47d51c17b3", "02278918-e902-4b35-8b03-f4a5980c407b", "7d0f521d-5cb7-4f2a-849f-21e97371da9f", "030b5562-37b5-4706-b459-672cdad03c58"]
   }],
   "urls": ["https://github.com/"],
   "plugins": []
