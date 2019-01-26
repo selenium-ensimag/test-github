@@ -5,7 +5,7 @@ Atteignabilité
 *Atteignabilité : Capacité du système à permettre à l'utilisateur de naviguer dans l’ensemble des états observables du système. Propriété non vérifiée si analyse de tâche ou analyse fonctionnelle défectueuse. Métrique : longueur de la trajectoire d'interaction entre p et q.*
 - [x] test 1 : login
 - [x] test 2 : logout
-- [ ] test impossible (création de compte à cause du capcha)
+- [ ] test impossible (création de compte à cause du captcha)
 
 adaptivité  http://iihm.imag.fr/nigay/VERBATIM/L3.1.pdf):
 - [x] test 1 (changer le status, et vérifier qu'il est bien mis)
@@ -26,6 +26,6 @@ Homogénéité /cohérence:
 
 Protection contre les erreurs:
 - [x] test 1 (le fait de devoir taper le nom d'un projet pour le supprimer)
-- [ ] test 2 (le stay on page lors qu'on quitte un document sans avoir sauvegarder)
+- [x] test 2 (Quitter la page de création d'une issue sans avoir sauvegardé, et retrouver le texte au retour sur la page)
 - [x] test 3 (on ne peut pas créer un repo sans nom)
 - [ ] test impossible (l'authentification à 2 facteur, qui s'assure que la personne qui à rentrer le login et le password n'a pas réussi par erreur !)
